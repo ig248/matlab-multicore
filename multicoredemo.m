@@ -111,7 +111,7 @@ runWithoutSlaves = false;
 % computing toolbox is installed. 
 % Note: The parfor loop will show a better performance, but remember that
 % you need to buy a license!
-runWithParfor = true;
+runWithParfor = false;
 
 % Finally, function TESTFUN is called directly with the given parameters to
 % see the raw execution time without any multicore advantage but also

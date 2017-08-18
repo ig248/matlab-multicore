@@ -1,4 +1,4 @@
-function multicoreDir = startmulticoreslaveinstances(n, multicoreDir, settings)
+function multicoreDir = spawnmulticoreslaveinstances(n, multicoreDir, settings)
 %STARTMULTICORESLAVEINSTANCES  Start multi-core processing slave processes in new MATLAB instances.
 %
 %   Igor Gotlibovych
