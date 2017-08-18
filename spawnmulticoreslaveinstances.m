@@ -8,7 +8,8 @@ function multicoreDir = spawnmulticoreslaveinstances(n, multicoreDir, settings)
 import multicore.*
 
 if ~exist('n', 'var') || isempty(n)
-  n = str2num(getenv('NUMBER_OF_PROCESSORS')) - 1;
+  %n = str2num(getenv('NUMBER_OF_PROCESSORS')) - 1;
+  n = feature('numCores') - 1;
 end
 % get slave file directory name
 if ~exist('multicoreDir', 'var') || isempty(multicoreDir)
@@ -46,6 +47,6 @@ for i = 1:n
         '" &'
         ];
     [status, cmdout] = system(command);
-    fprintf('Runner %d/%d returned status %d: %s\n', i, n, status, cmdout);
+    fprintf('Slave %d/%d returned status %d: %s\n', i, n, status, cmdout);
 end
 end
