@@ -8,7 +8,7 @@ function multicoreDir = spawnmulticoreslaveinstances(n, multicoreDir, settings)
 import multicore.*
 
 if ~exist('n', 'var') || isempty(n)
-  n = getenv('NUMBER_OF_PROCESSORS') - 1;
+  n = str2num(getenv('NUMBER_OF_PROCESSORS')) - 1;
 end
 % get slave file directory name
 if ~exist('multicoreDir', 'var') || isempty(multicoreDir)
