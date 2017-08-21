@@ -12,5 +12,7 @@ if ~exist('multicoreDir', 'var') || isempty(multicoreDir)
   multicoreDir = fullfile(tempdir2, 'multicorefiles');
 end
 
-rmdir(multicoreDir, 's')
+if exist(multicoreDir, 'dir')
+    rmdir(multicoreDir, 's')
+end
 end
