@@ -5,6 +5,9 @@ This is basically a "fork" of https://uk.mathworks.com/matlabcentral/fileexchang
 
 All credit goes to [Markus Buehren](https://uk.mathworks.com/matlabcentral/profile/authors/545430-markus-buehren)
 
+## See also
+https://github.com/ojwoodford/batch_job
+
 ## Changes
 - added `spawnmulticoreslaveinstances` and `killmulticoreslaveinstances` functions to automate instance launching
 - made code usable as a package (simply copy files to `path\+multicore\`)
